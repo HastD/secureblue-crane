@@ -35,7 +35,7 @@ Go library and CLIs for working with container registries.
 
 %build
 %global gomodulesmode GO111MODULE=on
-%gobuild -o %{gobuilddir}/bin/crane %{goipath}/crane
+%gobuild -o %{gobuilddir}/bin/crane %{goipath}/cmd/crane
 
 %install
 %go_vendor_license_install -c %{S:2}
