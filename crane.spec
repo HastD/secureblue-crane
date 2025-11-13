@@ -59,11 +59,6 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %doc pkg/v1/remote/transport/README.md pkg/v1/stream/README.md
 %doc pkg/v1/tarball/README.md
 %{_bindir}/crane
-%{_bindir}/gcrane
-%{_bindir}/ko
-%{_bindir}/krane
-%{_bindir}/registry
-
 
 %changelog
 %autochangelog
