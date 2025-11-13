@@ -48,7 +48,7 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 
 %files -f %{go_vendor_license_filelist}
 %license vendor/modules.txt
-%doc CONTRIBUTING.md README.md SECURITY.md doc cmd/crane/README.md
+%doc CONTRIBUTING.md README.md SECURITY.md cmd/crane/doc cmd/crane/README.md
 %doc cmd/crane/rebase.md cmd/crane/recipes.md cmd/crane/help/README.md
 %doc cmd/gcrane/README.md cmd/ko/README.md cmd/krane/README.md
 %doc hack/boilerplate/boilerplate.go.txt pkg/authn/README.md
