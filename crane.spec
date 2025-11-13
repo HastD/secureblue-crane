@@ -44,7 +44,7 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 
 %check
 %go_vendor_license_check -c %{S:2}
-%gocheck -d pkg/authn/k8schain -d pkg/authn/kubernetes
+%gocheck -d pkg/authn/k8schain -d pkg/authn/kubernetes -d pkg/v1/google
 
 %files -f %{go_vendor_license_filelist}
 %license vendor/modules.txt
